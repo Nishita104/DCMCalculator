@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#090909"
     android:padding="10dp"
     tools:context=".MainActivity">
 
@@ -12,7 +13,7 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Enter Value"
+        android:textColorHint="#FFFFFF"
         android:textSize="22sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -22,9 +23,14 @@
         android:id="@+id/edtSize"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Enter Value"
         android:inputType="numberDecimal"
+        android:textColorHint="#6A6A6A"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/btnGo"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -32,11 +38,14 @@
         android:id="@+id/txtResult"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="end"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
         android:padding="5dp"
         android:text="Result Goes Here"
-        android:textSize="20sp"
+        android:textColor="#235525"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtSize" />
 
@@ -44,8 +53,15 @@
         android:id="@+id/btnGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:width="30dp"
+        android:background="#E48004"
         android:onClick="findValues"
         android:text="Go"
+        android:textColor="#292828"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -56,8 +72,10 @@
         android:alpha="0.1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/logo_main" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
